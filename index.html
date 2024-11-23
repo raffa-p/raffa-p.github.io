@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="profile-pic">
+        <img src="./img/Untitled design.png" width="100%">
+      </div>
+      <h1 class="name">Raffaele Prota</h1>
+      <hr class="h-line">
+      <div class="sidebar-info-elem info-elem">
+        <div class="sidebar-info-icon">
+          <img src="./icons/school.svg">
+        </div>
+        <div class="sidebar-info-content">
+          <a href="https://www.unipi.it/" style="font-size: 15px;">University of Pisa</a>
+        </div>
+      </div>
+      <div class="sidebar-info-elem info-elem">
+        <div class="sidebar-info-icon">
+          <img src="./icons/Mediamodifier-Design.svg">
+        </div>
+        <div class="sidebar-info-content">
+          <a href="">La Spezia, Italy</a>
+        </div>
+      </div>
+      <hr class="h-line">
+      
+      <!-- SOCIAL -->
+      <div class="sidebar-info-elem social">
+        <a href="https://www.linkedin.com/in/raffaele-prota"><img src="./icons/linkedin.svg" alt="linkedin link"></a>
+        <a href="https://github.com/raffa-p"><img src="./icons/github.svg" alt="github link"></a>
+        <a href="https://www.instagram.com/raffaele_p2/"><img src="./icons/instagram.svg" alt="instagram link"></a>
+      </div>
+    </div>
+
+
+
+
+    <div class="content">
+
+      <!-- TOP BAR -->
+      <nav class="top-bar">
+        <ul class="top-bar-list">
+          <li class="top-bar-item">
+            <button class="top-bar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="top-bar-item">
+            <button class="top-bar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="top-bar-item">
+            <button class="top-bar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="top-bar-item">
+            <button class="top-bar-link" data-nav-link>Contact</button>
+          </li>
+          <li class="top-bar-item">
+            <button class="top-bar-link" data-nav-theme>Themes</button>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+
+      <!-- ABOUT ARTICLE -->
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="article-title">About me</h2>
+        </header>
+
+        <hr class="separator-main">
+
+        <section class="about-content">
+          <p>
+            I'm a student in Computer Science and Engeenering at University of Pisa, Italy.
+            I enjoy project, build and understand all in the IT field.
+          </p>
+
+          <p>
+            My course of study consists in a complete and general knowledge about computers, their architectures, the physics behind them.
+            During my studies i'm learning also other main branches of the IT fields as Web Development, database and computer networks design, popular programming languages development.
+          </p>
+        </section>
+
+
+
+        <section class="skills">
+
+          <h3>My skills</h3>
+
+          <ul class="skills-list">
+            <li class="skills-item">
+              <div class="skills-icon-box">
+                <img src="./img/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="skills-content-box">
+                <h4 class="skills-item-title">Web development</h4>
+                <p class="skills-item-text">
+                  High-quality development of web sites according to UML standards.
+                </p>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="skills-icon-box">
+                <img src="./img/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+              <div class="skills-content-box">
+                <h4 class="skills-item-title">Java Spring development</h4>
+                <p class="skills-item-text">
+                  Improving skills in Java Spring Framework to deliver professional standards.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+        </section>
+      </article>
+
+
+
+
+
+      <!-- RESUME -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="article-title">Resume</h2>
+        </header>
+
+        <hr class="separator-main">
+
+        <section class="timeline">
+
+          <h3>Education</h3>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">Computer Science and Engeenering at University of Pisa, Italy</h4>
+              <span>2021 — on going</span>
+              <p class="timeline-text">
+                Bachelor degree in Computer Science and Engeenering in progress.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">Istituto di Istruzione Superiore "G. Capellini - N. Sauro" La Spezia</h4>
+              <span>2016 — 2021</span>
+              <p class="timeline-text">
+                High school leaving qualification in scientific studies. Top grade.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!--
+        <section class="timeline">
+
+            <h3>Experience</h3>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="timeline-item-title">Lorem ipsum</h4>
+              <span>0000 - 0000</span>
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+            </li>
+          </ol>
+
+        </section>
+        -->
+
+      </article>
+
+
+
+
+
+      <!-- PORTFOLIO -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="article-title">Portfolio</h2>
+        </header>
+
+        <hr class="separator-main">
+
+        <section class="projects">
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/raffa-p/gymplus.git">
+                <figure class="project-img">
+                  <img src="./img/gymplus.jpeg" alt="orizon" loading="lazy">
+                </figure>
+              </a>
+              <a href="https://github.com/raffa-p/gymplus.git">
+                <h3 class="project-title">Gymplus</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/raffa-p/Laureandosi2.git">
+                <figure class="project-img">
+                  <img src="./img/Laureandosi.jpeg" alt="Laureandosi2" loading="lazy">
+                </figure>
+              </a>
+              <a href="https://github.com/raffa-p/Laureandosi2.git">
+                <h3 class="project-title">Laureandosi2</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/raffa-p/SmartBuildings.git">
+                <figure class="project-img">
+                  <img src="./img/SmartBuildings.png" alt="fundo" loading="lazy">
+                </figure>
+              </a>
+              <a href="https://github.com/raffa-p/SmartBuildings.git">
+                <h3 class="project-title">SmartBuildings</h3>
+                <p class="project-category">Database design</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/raffa-p/Innovatec-s.p.a..git">
+                <figure class="project-img">
+                  <img src="./img/Innovatec.png" alt="fundo" loading="lazy">
+                </figure>
+              </a>
+              <a href="https://github.com/raffa-p/Innovatec-s.p.a..git">
+                <h3 class="project-title">Innovatec S.p.a.</h3>
+                <p class="project-category">Business research</p>
+              </a>
+            </li>
+
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      <!-- CONTACT -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="article-title">Contact</h2>
+        </header>
+
+        <hr class="separator-main">
+
+        <section class="form">
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <div id="response-container"><span id="message-response"></span></div>
+            <button class="form-btn" id="submit-btn" type="submit" disabled data-form-btn>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+        
+      </article>
+      
+    </div>
+
+    <div class="footer"><a href="https://www.flaticon.com/free-icons/development" title="development icons">Icons courtesy of Flaticon</a></div>
+    
+  </main>
+  
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  
+
+  
+</body>
+
+</html>
