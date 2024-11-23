@@ -1,2 +1,1 @@
-# personal-portfolio
-Source code for my personal portfolio
+My personal portfolio
