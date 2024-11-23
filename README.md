@@ -1,2 +1,2 @@
 # personal-portfolio
-HTML page for personal portfolio
+Source code for my personal portfolio
