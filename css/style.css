@@ -369,3 +369,5 @@ textarea.form-input::-webkit-resizer{ display: none; }
   .top-bar{ width: fit-content; }
   .top-bar-link{ font-weight: 500; }
 }
+
+#obscure{ display: none; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background: var(--page-bg); color: var(--color-text); justify-content: center; align-content: center; }

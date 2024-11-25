@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     topBarNavigation();
     document.querySelector("[data-nav-theme]").addEventListener("click", changeTheme);
     window.addEventListener("resize", sidebarResponsive);    
+    window.addEventListener("resize", checkMinWidth);    
     
 
     const form = document.querySelector("[data-form]");
@@ -91,6 +92,13 @@ function sidebarResponsive(){
             }
         }
     }
+}
+
+
+function checkMinWidth(){
+    let currentWidth = window.innerWidth;
+    if (currentWidth < 450){ document.getElementById("obscure").style.display = "flex"; }
+    else{ document.getElementById("obscure").style.display = "none"; }
 }
 
 
