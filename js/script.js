@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     topBarNavigation();
     document.querySelector("[data-nav-theme]").addEventListener("click", changeTheme);
-    window.addEventListener("resize", sidebarResponsive);    
+    window.addEventListener("resize", sidebarResponsive); 
+    checkMinWidth();   
     window.addEventListener("resize", checkMinWidth);    
     
 
@@ -97,8 +98,15 @@ function sidebarResponsive(){
 
 function checkMinWidth(){
     let currentWidth = window.innerWidth;
-    if (currentWidth < 450){ document.getElementById("obscure").style.display = "flex"; }
-    else{ document.getElementById("obscure").style.display = "none"; }
+    let div = document.getElementById("obscure");
+    if (currentWidth < 450){ 
+        div.style.display = "flex"; 
+        document.querySelector("body").style.overflow = "hidden";
+    }
+    else{ 
+        div.style.display = "none"; 
+        document.querySelector("body").style.overflow = "auto";
+    }
 }
 
 
