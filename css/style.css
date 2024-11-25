@@ -83,7 +83,7 @@ input, textarea{ display: block; width: 100%; background: none; font: inherit; }
 .sidebar h1{ padding: 0.5em 0; color: var(--sidebar-color); font-size:larger; font-weight: 500; }
 .sidebar-info-icon img{ width: 2em; }
 .sidebar-info-elem{ position: relative; display: flex; justify-content: flex-start; align-items: center; padding: 1em; margin-top: 1em; flex-direction: row; gap: 1em; color: var(--sidebar-color-lower); width: 100%; }
-.sidebar-info-content{ white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sidebar-info-content{ white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--sidebar-color); }
 .social img{ width: 1.5em; }
 .social{ justify-content: center; }
 .sidebar-info-content a{ color: var(--sidebar-color); }
