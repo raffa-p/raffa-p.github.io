@@ -71,9 +71,10 @@ h3, h4{ color: var(--color-titles); }
 .content-card::before{ content: ""; position: absolute; inset: 1px; border-radius: inherit; z-index: -1; }
 button{ background: none; border: none; text-align: left; cursor: pointer; }
 input, textarea{ display: block; width: 100%; background: none; font: inherit; } 
-.footer{ bottom: 0; background: var(--footer-bg); font-size: 13px; height: 50px; width: 100%; padding: 10px; display: flex; align-items: center; justify-content: center; } 
+.footer{ bottom: 0; background: var(--footer-bg); font-size: 13px; height: 50px; width: 100%; padding: 10px; display: flex; align-items: center; justify-content: center; color: var(--footer-text)!important; } 
 .footer a{ color: var(--footer-text); }
 .footer a:visited{ color: var(--footer-text); }
+.footer hr{ width: 1px; margin: 2em; border: 1px solid var(--card-border); height: 100%; }
 
   
 /* SIDEBAR */  
