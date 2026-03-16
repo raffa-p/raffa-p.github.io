@@ -123,10 +123,10 @@ function sendEmail(){
 //console.log(bodyMessage); return;
     Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "personal.page.contacts@gmail.com",
-        Password : "2FA70566A68F7B077ECA741AD538DD8CC9B7",
-        To : 'personal.page.contacts@gmail.com',
-        From : 'personal.page.contacts@gmail.com',
+        Username : "***********************",
+        Password : "***********************",
+        To : '***********************',
+        From : '***********************',
         Subject : "Contact request",
         Body : bodyMessage
     }).then(
