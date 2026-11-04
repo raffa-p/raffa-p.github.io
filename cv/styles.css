@@ -158,3 +158,32 @@ h1, h2, h3, h4 {
     content: '•••••';
     color: var(--bs-primary);
 }
+
+/* Centered portrait shared by the web CV and generated PDF */
+.cv-portrait {
+    width: 148px;
+    height: 148px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #f3f3f3;
+}
+
+@media print {
+    .col-print-2 {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .col-print-5 {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+
+    .cv-portrait {
+        width: 105px;
+        height: 105px;
+    }
+}
